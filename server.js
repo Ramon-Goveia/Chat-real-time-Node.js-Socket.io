@@ -14,6 +14,14 @@ app.use('/', (req, res) =>{
     res.render('index.html')
 })
 
+io.on('connection', socket => {
+    console.log(`Socket conectado: ${socket.id}`)
+
+    socket.on('sendMessage', data => {
+        console.log(data)
+    })
+})
+
 server.listen(3000, () => {
     console.log('Servidor iniciado na porta 3000: http://localhost:3000/')
 })
