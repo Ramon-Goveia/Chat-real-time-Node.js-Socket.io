@@ -1,5 +1,5 @@
 const express = require('express')
-const path = require(path)
+const path = require('path')
 
 const app = express()
 const server = require('http').createServer(app)//protocolo http
@@ -14,5 +14,6 @@ app.use('/', (req, res) =>{
     res.render('index.html')
 })
 
-server.listen(3000)
-
+server.listen(3000, () => {
+    console.log('Servidor iniciado na porta 3000: http://localhost:3000/')
+})
