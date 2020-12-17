@@ -4,7 +4,7 @@ Chat em tempo real com NodeJS + Socket.io
 Tecnologias:
  - Node.js
  - Socket.io
- - Jquery
+ - JQuery
  #
 COMO RODAR O PROJETO
 
